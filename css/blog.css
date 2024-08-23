@@ -1,0 +1,55 @@
+/* Cible spécifiquement le carrousel dans la section "Latest New on Blockbot" */
+#carouselExampleCaptions {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item-inner {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-item-content {
+    flex: 0 0 auto;
+    width: 33.333%; /* Affiche 3 images par diapositive */
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.carousel-item-content img {
+    width: 100%;
+    height: auto; /* Assure que les images gardent leurs proportions */
+    border-radius: 5px; /* Optionnel : pour arrondir les coins des images */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+/* Assurer que les boutons de contrôle du carrousel soient visibles */
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
